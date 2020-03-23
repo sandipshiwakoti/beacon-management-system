@@ -4,6 +4,8 @@ Beacon management system is the desktop application using c# language. The appli
 
 ---
 
+![](loginform.png)
+
 ## Login credentials
 
 - username: sandip
