@@ -4,7 +4,7 @@ Beacon management system is the desktop application using c# language. The appli
 
 ---
 
-<img src="loginform.png" width="100%">
+<img src="loginform.png" width="400">
 
 ---
 
