@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ABA98F8B-17F0-4E7B-B3F2-8CCD824EA0D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>projectfirst</RootNamespace>
+    <AssemblyName>projectfirst</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\a\Desktop\ppt new\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>06D5F1D1B5F159A0CD363B52AE9D97B4C79E8CAC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>projectfirst_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.Data.EntityFrameworkCore, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.Data.EntityFrameworkCore.Design, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adform.Designer.cs">
+      <DependentUpon>adform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminform.Designer.cs">
+      <DependentUpon>adminform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admins.Designer.cs">
+      <DependentUpon>admins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ads.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ads.Designer.cs">
+      <DependentUpon>ads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="areaform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="areaform.Designer.cs">
+      <DependentUpon>areaform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="areas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="areas.Designer.cs">
+      <DependentUpon>areas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="beaconform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="beaconform.Designer.cs">
+      <DependentUpon>beaconform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="beacons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="beacons.Designer.cs">
+      <DependentUpon>beacons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="beacon_ad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="beacon_ad.Designer.cs">
+      <DependentUpon>beacon_ad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="beacon_adform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="beacon_adform.Designer.cs">
+      <DependentUpon>beacon_adform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clickform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clickform.Designer.cs">
+      <DependentUpon>clickform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clicks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clicks.Designer.cs">
+      <DependentUpon>clicks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clientform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientform.Designer.cs">
+      <DependentUpon>clientform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clients.Designer.cs">
+      <DependentUpon>clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="impressionform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="impressionform.Designer.cs">
+      <DependentUpon>impressionform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="impressions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="impressions.Designer.cs">
+      <DependentUpon>impressions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adform.resx">
+      <DependentUpon>adform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminform.resx">
+      <DependentUpon>adminform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admins.resx">
+      <DependentUpon>admins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ads.resx">
+      <DependentUpon>ads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="areaform.resx">
+      <DependentUpon>areaform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="areas.resx">
+      <DependentUpon>areas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="beaconform.resx">
+      <DependentUpon>beaconform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="beacons.resx">
+      <DependentUpon>beacons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="beacon_ad.resx">
+      <DependentUpon>beacon_ad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="beacon_adform.resx">
+      <DependentUpon>beacon_adform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clickform.resx">
+      <DependentUpon>clickform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clicks.resx">
+      <DependentUpon>clicks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientform.resx">
+      <DependentUpon>clientform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clients.resx">
+      <DependentUpon>clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="impressionform.resx">
+      <DependentUpon>impressionform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="impressions.resx">
+      <DependentUpon>impressions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="projectfirst_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
