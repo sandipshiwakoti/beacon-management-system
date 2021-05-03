@@ -8,6 +8,10 @@ Beacon management system is the desktop application using c# language. The appli
 
 ---
 
+https://user-images.githubusercontent.com/62270918/116873545-99e48080-ac37-11eb-8e54-bc8fad8eefc1.mp4
+
+---
+
 ## Login credentials
 
 - username: sandip
